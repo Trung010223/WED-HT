@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QT.FAST.FOOD</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Liên kết font awesome từ cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- Đường link css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header phần bắt đầu -->
+    <header>
+      <a href="#" class="logo"><i class="fas fa-utensils"></i>Fast food.</a>
+      <nav class="navbar">
+        <a class="active" href="#home">Trang chủ</a>
+        <a href="#dishes">Bán chạy</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#review">Đánh giá</a>
+        <a href="#oder">Đặt hàng</a>
+      </nav>
+      <div class="icons">
+        
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <i class="bx bx-shopping-bag " id="cart-icon"></i>
+    </header>
+    <!-- Sign in -->
+    
+    <!-- Form tìm kiếm -->
+    <form action="" id="search-form">
+      <input
+        type="search"
+        placeholder="Món ăn tìm kiếm..."
+        name=""
+        id="search-box"
+      />
+      <label for="search-box" class="fas fa-search"></label>
+      <i class="fas fa-times" id="close"></i>
+    </form>
+   
+    <!-- section đầu -->
+
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper wrapper">
+          <!-- slide 1 -->
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>Món ăn đặc biệt của chúng tôi</span>
+              <h3>Mì Ý</h3>
+              <p>
+                Mì spaghetti là món ăn truyền thống của Italy, được làm từ bột
+                mì và trứng, thường được ăn với nước sốt cà chua, phô mai và các
+                loại thịt.
+              </p>
+            </div>
+            <div class="image">
+              <img src="img/banner/mi-y.png" alt="" />
+            </div>
+          </div>
+
+          <!-- slide 2 -->
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>Món ăn đặc biệt của chúng tôi</span>
+              <h3>Hamburger</h3>
+              <p>
+                Hamburger là món ăn nhanh truyền thống của Mỹ, gồm bánh mì kẹp
+                thịt bò xay, rau, phô mai và các gia vị như xốt mayonnaise,
+                ketchup hoặc mù tạt.
+              </p>
+            </div>
+            <div class="image">
+              <img src="img/banner/hamburger.jpg" alt="" />
+            </div>
+          </div>
+          <!-- slide 3 -->
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>Món ăn đặc biệt của chúng tôi</span>
+              <h3>Pizaa</h3>
+              <p>
+                Pizza là món ăn truyền thống của Italy gồm đế bánh mì nướng,
+                thường được phủ nước sốt cà chua, phô mai và các loại nguyên
+                liệu như thịt, rau củ hoặc hải sản.
+              </p>
+            </div>
+            <div class="image">
+              <img src="img/banner/pizza.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- section món ăn -->
+    <section class="dishes" id="dishes">
+      <h3 class="sub-heading">Món ăn bán nhiều nhất</h3>
+      <h1 class="heading">Món ăn thịnh hành</h1>
+      <div class="box-container">
+        <!-- món 1 -->
+        <div class="box" id="box1">
+          <img src="img/SP/mi-y-pho-mai.jpg" alt="" class="product-img"/>
+           
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3 class="product-title">Mì ý phô mai</h3>
+           
+             <span class="price">50.000 VND</span>
+            <i class="btn add-cart">Thêm vào giỏ hàng</i>
+          </div>
+          <div class="chilPage" id="chilPage1">
+            <div class="product-details-modal hidden">
+              <div class="product-details-content">
+                <div class="product-image">
+                  <img src="img/SP/mi-y-pho-mai.jpg" />
+                </div>
+                <div class="product-info">
+                  <h3 class="title">Mì ý phô mai</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Reiciendis consequuntur repellat veritatis omnis, placeat sequi
+                    reprehenderit minus voluptatum totam eius aperiam nesciunt,
+                    cupiditate est harum impedit mollitia soluta ut quas dolorem
+                    hic. Odio nihil velit quo vel minima consequatur ipsam
+                    similique? Libero porro, accusamus dolore soluta asperiores
+                    repudiandae eum quae. Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Perferendis repellendus expedita distinctio
+                    dolore temporibus at a facilis repudiandae quo odit numquam
+                    dicta inventore, nulla eius? Atque provident hic fugit minima.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
+                    fuga recusandae culpa consequatur
+                  </p>
+                  <span class="price">50.000 VND</span>
+                  <button class="btn">Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <!-- món 2 -->
+        <div class="box" id="box2">
+          <img src="img/SP/hamburger-ga-2-tang.jpg" alt="" class="product-img"/>
+          <h3 class="product-title" >Hamburger gà</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span class="price">30.000 VND</span>
+          <i class="btn add-cart">Thêm vào giỏ hàng</i>
+          </div>
+          <div class="chilPage" id="chilPage2">
+            <div class="product-details-modal hidden">
+              <div class="product-details-content">
+                <div class="product-image">
+                  <img src="img/SP/hamburger-ga-2-tang.jpg" />
+                </div>
+                <div class="product-info">
+                  <h3 class="title">Hamburger gà</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Reiciendis consequuntur repellat veritatis omnis, placeat sequi
+                    reprehenderit minus voluptatum totam eius aperiam nesciunt,
+                    cupiditate est harum impedit mollitia soluta ut quas dolorem
+                    hic. Odio nihil velit quo vel minima consequatur ipsam
+                    similique? Libero porro, accusamus dolore soluta asperiores
+                    repudiandae eum quae. Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Perferendis repellendus expedita distinctio
+                    dolore temporibus at a facilis repudiandae quo odit numquam
+                    dicta inventore, nulla eius? Atque provident hic fugit minima.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
+                    fuga recusandae culpa consequatur
+                  </p>
+                  <span class="price">30.000 VND</span>
+                  <button class="btn">Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- món 3 -->
+        <div class="box" id="box3">
+          <img src="img/SP/pizza-hai-san.webp" alt="" class="product-img"/>
+          <h3 class="product-title">Pizza hải sản</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span class="price">99.000 VND</span>
+          <i class="btn add-cart">Thêm vào giỏ hàng</i>
+          </div>
+      </div>
+      <div class="chilPage" id="chilPage3">
+        <div class="product-details-modal hidden">
+          <div class="product-details-content">
+            <div class="product-image">
+              <img src="img/SP/pizza-hai-san.webp" />
+            </div>
+            <div class="product-info">
+              <h3 class="title">Pizza hải sản</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reiciendis consequuntur repellat veritatis omnis, placeat sequi
+                reprehenderit minus voluptatum totam eius aperiam nesciunt,
+                cupiditate est harum impedit mollitia soluta ut quas dolorem
+                hic. Odio nihil velit quo vel minima consequatur ipsam
+                similique? Libero porro, accusamus dolore soluta asperiores
+                repudiandae eum quae. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Perferendis repellendus expedita distinctio
+                dolore temporibus at a facilis repudiandae quo odit numquam
+                dicta inventore, nulla eius? Atque provident hic fugit minima.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
+                fuga recusandae culpa consequatur
+              </p>
+              <span class="price">65.000 VND</span>
+              <button class="btn">Thêm vào giỏ hàng</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section -->
+    <section class="about" id="about">
+      <h3 class="sub-heading">Về chúng tôi</h3>
+      <h1 class="heading">Thực phẩm, quy trình chế biến có đảm bảo?</h1>
+      <div class="row">
+        <div class="image">
+          <img src="img/banner/pizza-baner1.jpg" alt="" />
+        </div>
+        <div class="content">
+          <h3>Cam kết!</h3>
+          <p>
+            Chất lượng và sự tươi ngon của các món ăn là ưu tiên hàng đầu của
+            chúng tôi. Với những nguyên liệu tươi sạch, quy trình chế biến khép
+            kín và đội ngũ đầu bếp tài năng, chúng tôi cam kết mang đến cho
+            khách hàng những món ăn đạt tiêu chuẩn cao nhất về hương vị, dinh
+            dưỡng và an toàn vệ sinh. Bất kể đó là pizza Italy với đế bánh giòn
+            tan, hamburger Mỹ thịt bò tươi ngon hay mỳ ý carbonara với sự hài
+            hòa tinh tế, khách hàng sẽ được thưởng thức trọn vẹn những tinh hoa
+            ẩm thực hàng đầu thế giới. Chất lượng là cam kết không thể lay
+            chuyển của chúng tôi.
+          </p>
+          <div class="icons-container">
+            <div class="icons">
+              <i class="fas fa-shipping-fast"></i>
+              <span>Miễn phí vận chuyển</span>
+            </div>
+            <div class="icons">
+              <i class="fas fa-dollar-sign"></i>
+              <span>Dễ dàng thanh toán</span>
+            </div>
+            <div class="icons">
+              <i class="fas fa-headset"></i>
+              <span>Dịch vụ 24/7</span>
+            </div>
+          </div>
+          <a href="#" class="btn">Tìm hiểu thêm</a>
+        </div>
+      </div>
+    </section>
+     <!-- menu -->
+     <section class="menu" id="menu">
+      <h3 class="sub-heading">Chúc quý khách có một ngày vui vẻ</h3>
+      <h1 class="heading">Menu của chúng tôi</h1>
+      <div class="box-container">
+        <!-- món 1 -->
+        <div class="box" id="box4">
+        <div class="image"> 
+           <img src="img/SP/mi-y-sot-pesto.jpeg" alt="" class="product-img"/>
+          </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3 class="product-title">Mì ý sốt pesto</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque,
+              sapiente!
+            </p>
+             <span class="price">45.000 VND</span>
+            <i class="btn add-cart">Thêm vào giỏ hàng</i>
+          </div>
+          <!-- chill page -->
+          <div class="chilPage" id="chilPage4">
+            <div class="product-details-modal hidden">
+              <div class="product-details-content">
+                <div class="product-image">
+                  <img src="img/SP/mi-y-sot-pesto.jpeg" />
+                </div>
+                <div class="product-info">
+                  <h3 class="title">Mì ý sốt pesto</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Reiciendis consequuntur repellat veritatis omnis, placeat sequi
+                    reprehenderit minus voluptatum totam eius aperiam nesciunt,
+                    cupiditate est harum impedit mollitia soluta ut quas dolorem
+                    hic. Odio nihil velit quo vel minima consequatur ipsam
+                    similique? Libero porro, accusamus dolore soluta asperiores
+                    repudiandae eum quae. Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Perferendis repellendus expedita distinctio
+                    dolore temporibus at a facilis repudiandae quo odit numquam
+                    dicta inventore, nulla eius? Atque provident hic fugit minima.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
+                    fuga recusandae culpa consequatur
+                  </p>
+                  <span class="price">45.000 VND</span>
+                  <button class="btn">Thêm vào giỏ hàng</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- món 2 -->
+        <div class="box" id="box5">
+        <div class="image"> 
+           <img src="img/SP/mi-y-spaghetti.jpg" alt="" class="product-img"/>
+          </div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+            <h3 class="product-title">Mì ý thịt bò bằm</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque,
+              sapiente!
+            </p>
+             <span class="price">65.000 VND</span>
+            <i class="btn add-cart">Thêm vào giỏ hàng</i>
+          </div>
+          <!-- Chill page -->
+           
+      <div class="chilPage" id="chilPage5">
+        <div class="product-details-modal hidden">
+          <div class="product-details-content">
+            <div class="product-image">
+              <img src="img/SP/mi-y-spaghetti.jpg" />
+            </div>
+            <div class="product-info">
+              <h3 class="title">Mì ý thịt bò bằm</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reiciendis consequuntur repellat veritatis omnis, placeat sequi
+                reprehenderit minus voluptatum totam eius aperiam nesciunt,
+                cupiditate est harum impedit mollitia soluta ut quas dolorem
+                hic. Odio nihil velit quo vel minima consequatur ipsam
+                similique? Libero porro, accusamus dolore soluta asperiores
+                repudiandae eum quae. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Perferendis repellendus expedita distinctio
+                dolore temporibus at a facilis repudiandae quo odit numquam
+                dicta inventore, nulla eius? Atque provident hic fugit minima.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
+                fuga recusandae culpa consequatur
+              </p>
+              <span class="price">65.000 VND</span>
+              <button class="btn">Thêm vào giỏ hàng</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+        <!-- món 3 -->
+        <div class="box" id="box6">
+        <div class="image"> 
+           <img src="img/SP/mi-Y-tom-sot-kem.jpg" alt="" class="product-img"/>
+          </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3 class="product-title">Mì ý tôm sốt kem</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque,
+              sapiente!
+            </p>
+             <span class="price">65.000 VND</span>
+            <i class="btn add-cart">Thêm vào giỏ hàng</i>
+          </div>
+           <!-- Chill page -->
+           
+      <div class="chilPage" id="chilPage6">
+        <div class="product-details-modal hidden">
+          <div class="product-details-content">
+            <div class="product-image">
+              <img src="img/SP/mi-Y-tom-sot-kem.jpg" />
+            </div>
+            <div class="product-info">
+              <h3 class="title">Mì ý tôm sốt kem</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reiciendis consequuntur repellat veritatis omnis, placeat sequi
+                reprehenderit minus voluptatum totam eius aperiam nesciunt,
+                cupiditate est harum impedit mollitia soluta ut quas dolorem
+                hic. Odio nihil velit quo vel minima consequatur ipsam
+                similique? Libero porro, accusamus dolore soluta asperiores
+                repudiandae eum quae. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Perferendis repellendus expedita distinctio
+                dolore temporibus at a facilis repudiandae quo odit numquam
+                dicta inventore, nulla eius? Atque provident hic fugit minima.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
+                fuga recusandae culpa consequatur
+              </p>
+              <span class="price">65.000 VND</span>
+              <button class="btn">Thêm vào giỏ hàng</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+        <!-- món 4 -->
+        <div class="box" id="box7">
+          <div class="image"> 
+             <img src="img/SP/hamburger-nhan-thit-heo.webp" alt="" class="product-img"/>
+            </div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h3 class="product-title">Hamburger heo quay</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque,
+                sapiente!
+              </p>
+               <span class="price">58.000 VND</span>
+              <i class="btn add-cart">Thêm vào giỏ hàng</i>
+            </div>
+             <!-- Chill page -->
+           
+      <div class="chilPage" id="chilPage7">
+        <div class="product-details-modal hidden">
+          <div class="product-details-content">
+            <div class="product-image">
+              <img src="img/SP/hamburger-nhan-thit-heo.webp" />
+            </div>
+            <div class="product-info">
+              <h3 class="title">Hamburger heo quay</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reiciendis consequuntur repellat veritatis omnis, placeat sequi
+                reprehenderit minus voluptatum totam eius aperiam nesciunt,
+                cupiditate est harum impedit mollitia soluta ut quas dolorem
+                hic. Odio nihil velit quo vel minima consequatur ipsam
+                similique? Libero porro, accusamus dolore soluta asperiores
+                repudiandae eum quae. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Perferendis repellendus expedita distinctio
+                dolore temporibus at a facilis repudiandae quo odit numquam
+                dicta inventore, nulla eius? Atque provident hic fugit minima.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
+                fuga recusandae culpa consequatur
+              </p>
+              <span class="price">58.000 VND</span>
+              <button class="btn">Thêm vào giỏ hàng</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+          <!-- món 5 -->
+          <div class="box" id="box8">
+          <div class="image"> 
+             <img src="img/SP/hamburger-tom.jpg" alt="" class="product-img"/>
+            </div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h3 class="product-title">Hamburger tôm</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque,
+                sapiente!
+              </p>
+               <span class="price">59.000 VND</span>
+              <i class="btn add-cart">Thêm vào giỏ hàng</i>
+            </div>
+             <!-- Chill page -->
+           
+      <div class="chilPage" id="chilPage8">
+        <div class="product-details-modal hidden">
+          <div class="product-details-content">
+            <div class="product-image">
+              <img src="img/SP/hamburger-tom.jpg" />
+            </div>
+            <div class="product-info">
+              <h3 class="title">Hamburger tôm</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reiciendis consequuntur repellat veritatis omnis, placeat sequi
+                reprehenderit minus voluptatum totam eius aperiam nesciunt,
+                cupiditate est harum impedit mollitia soluta ut quas dolorem
+                hic. Odio nihil velit quo vel minima consequatur ipsam
+                similique? Libero porro, accusamus dolore soluta asperiores
+                repudiandae eum quae. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Perferendis repellendus expedita distinctio
+                dolore temporibus at a facilis repudiandae quo odit numquam
+                dicta inventore, nulla eius? Atque provident hic fugit minima.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
+                fuga recusandae culpa consequatur
+              </p>
+              <span class="price">59.000 VND</span>
+              <button class="btn">Thêm vào giỏ hàng</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+          <!-- món 6 -->
+          <div class="box" id="box9">
+          <div class="image"> 
+             <img src="img/SP/BÒ-2-TẦNG_hamburger.jpg" alt="" class="product-img"/>
+            </div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h3 class="product-title">Hamburger bò 2 tầng</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque,
+                sapiente!
+              </p>
+               <span class="price">65.000 VND</span>
+              <i class="btn add-cart">Thêm vào giỏ hàng</i>
+            </div>
+             <!-- Chill page -->
+           
+      <div class="chilPage" id="chilPage9">
+        <div class="product-details-modal hidden">
+          <div class="product-details-content">
+            <div class="product-image">
+              <img src="img/SP/BÒ-2-TẦNG_hamburger.jpg" />
+            </div>
+            <div class="product-info">
+              <h3 class="title">Hamburger bò 2 tầng</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reiciendis consequuntur repellat veritatis omnis, placeat sequi
+                reprehenderit minus voluptatum totam eius aperiam nesciunt,
+                cupiditate est harum impedit mollitia soluta ut quas dolorem
+                hic. Odio nihil velit quo vel minima consequatur ipsam
+                similique? Libero porro, accusamus dolore soluta asperiores
+                repudiandae eum quae. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Perferendis repellendus expedita distinctio
+                dolore temporibus at a facilis repudiandae quo odit numquam
+                dicta inventore, nulla eius? Atque provident hic fugit minima.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
+                fuga recusandae culpa consequatur
+              </p>
+              <span class="price">65.000 VND</span>
+              <button class="btn">Thêm vào giỏ hàng</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+        <!-- món 7 -->
+        <div class="box" id="box10">
+          <div class="image"> 
+             <img src="img/SP/pizza-ngo.jpg" alt="" class="product-img"/>
+            </div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h3 class="product-title">pizza phô mai bắp ngọt</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque,
+                sapiente!
+              </p>
+               <span class="price">55.000 VND</span>
+              <i class="btn add-cart">Thêm vào giỏ hàng</i>
+            </div>
+             <!-- Chill page -->
+           
+      <div class="chilPage" id="chilPage10">
+        <div class="product-details-modal hidden">
+          <div class="product-details-content">
+            <div class="product-image">
+              <img src="img/SP/pizza-ngo.jpg" />
+            </div>
+            <div class="product-info">
+              <h3 class="title">pizza phô mai bắp ngọt</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reiciendis consequuntur repellat veritatis omnis, placeat sequi
+                reprehenderit minus voluptatum totam eius aperiam nesciunt,
+                cupiditate est harum impedit mollitia soluta ut quas dolorem
+                hic. Odio nihil velit quo vel minima consequatur ipsam
+                similique? Libero porro, accusamus dolore soluta asperiores
+                repudiandae eum quae. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Perferendis repellendus expedita distinctio
+                dolore temporibus at a facilis repudiandae quo odit numquam
+                dicta inventore, nulla eius? Atque provident hic fugit minima.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
+                fuga recusandae culpa consequatur
+              </p>
+              <span class="price">55.000 VND</span>
+              <button class="The">Thêm vào giỏ hàng</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+          <!-- món 8 -->
+          <div class="box" id="box11">
+          <div class="image"> 
+             <img src="img/SP/pizza-thap-cam.jpg" alt="" class="product-img"/>
+            </div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h3 class="product-title">Pizza thập cẩm</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque,
+                sapiente!
+              </p>
+               <span class="price">69.000 VND</span>
+              <i class="btn add-cart">Thêm vào giỏ hàng</i>
+            </div>
+             <!-- Chill page -->
+           
+      <div class="chilPage" id="chilPage11">
+        <div class="product-details-modal hidden">
+          <div class="product-details-content">
+            <div class="product-image">
+              <img src="img/SP/pizza-thap-cam.jpg" />
+            </div>
+            <div class="product-info">
+              <h3 class="title">Pizza thập cẩm</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reiciendis consequuntur repellat veritatis omnis, placeat sequi
+                reprehenderit minus voluptatum totam eius aperiam nesciunt,
+                cupiditate est harum impedit mollitia soluta ut quas dolorem
+                hic. Odio nihil velit quo vel minima consequatur ipsam
+                similique? Libero porro, accusamus dolore soluta asperiores
+                repudiandae eum quae. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Perferendis repellendus expedita distinctio
+                dolore temporibus at a facilis repudiandae quo odit numquam
+                dicta inventore, nulla eius? Atque provident hic fugit minima.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
+                fuga recusandae culpa consequatur
+              </p>
+              <span class="price">69.000 VND</span>
+              <button class="btn">Thêm vào giỏ hàng</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+          <!-- món 9 -->
+          <div class="box" id="box12">
+          <div class="image"> 
+             <img src="img/SP/pizza-xuc-xich.jpg" alt="" class="product-img"/>
+            </div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h3 class="product-title">pizza xúc xích</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque,
+                sapiente!
+              </p>
+               <span class="price">66.000 VND</span>
+              <i class="btn add-cart">Thêm vào giỏ hàng</i>
+            </div>
+             <!-- Chill page -->
+           
+      <div class="chilPage" id="chilPage12">
+        <div class="product-details-modal hidden">
+          <div class="product-details-content">
+            <div class="product-image">
+              <img src="img/SP/pizza-xuc-xich.jpg" />
+            </div>
+            <div class="product-info">
+              <h3 class="title">pizza xúc xích</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reiciendis consequuntur repellat veritatis omnis, placeat sequi
+                reprehenderit minus voluptatum totam eius aperiam nesciunt,
+                cupiditate est harum impedit mollitia soluta ut quas dolorem
+                hic. Odio nihil velit quo vel minima consequatur ipsam
+                similique? Libero porro, accusamus dolore soluta asperiores
+                repudiandae eum quae. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Perferendis repellendus expedita distinctio
+                dolore temporibus at a facilis repudiandae quo odit numquam
+                dicta inventore, nulla eius? Atque provident hic fugit minima.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
+                fuga recusandae culpa consequatur
+              </p>
+              <span class="price">66.000 VND</span>
+              <button class="btn">Thêm vào giỏ hàng</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+        <!-- món 10 -->
+        <div class="box" id="box13">
+          <div class="image"> 
+             <img src="img/SP/coca-cola-khong-calo.jpg" alt="" class="product-img"/>
+            </div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h3 class="product-title">coca cola không calo</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque,
+                sapiente!
+              </p>
+               <span class="price">50.000 VND</span>
+              <i class="btn add-cart">Thêm vào giỏ hàng</i>
+            </div>
+          <!-- món 11 -->
+          <div class="box" id="box14">
+          <div class="image"> 
+             <img src="img/SP/coca-cola.jpg" alt="" class="product-img"/>
+            </div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h3 class="product-title">coca cola nguyên bản</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque,
+                sapiente!
+              </p>
+               <span class="price">50.000 VND</span>
+              <i class="btn add-cart">Thêm vào giỏ hàng</i>
+            </div>
+          <!-- món 12 -->
+          <div class="box" id="box15">
+          <div class="image"> 
+             <img src="img/SP/pepsi-vi-chanh-khong-calo.jpg" alt="" class="product-img"/>
+            </div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h3 class="product-title">Pessi vị chanh không calo</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque,
+                sapiente!
+              </p>
+               <span class="price">50.000 VND</span>
+              <i class="btn add-cart">Thêm vào giỏ hàng</i>
+            </div>
+             
+      </div>
+    </section>
+   
+    <!-- review section -->
+   
+    <section class="review" id="review">
+      <h3 class="sub-heading">Đánh giá khách hàng</h3>
+      <h1 class="heading">Fast Food</h1>
+      <div  class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <!-- people 1 -->
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="img/comment/le-duong-bao-lam.jpg" alt="">
+              <div class="user-info">
+                <h3>Lê Dương Bảo lâm</h3>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+              </div>
+          </div>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Amet illo sequi asperiores error pariatur sit eligendi debitis,
+            laborum iure aut nesciunt ducimus rem. Id unde molestiae 
+            facilis, eaque expedita fugiat?</p>
+          </div>
+              <!-- people 2-->
+              <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                  <img src="img/comment/ngo-kien-huy.jpg" alt="">
+                  <div class="user-info">
+                    <h3>Ngô Kiens Huy</h3>
+                      <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                  </div>
+              </div>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Amet illo sequi asperiores error pariatur sit eligendi debitis,
+                laborum iure aut nesciunt ducimus rem. Id unde molestiae 
+                facilis, eaque expedita fugiat?</p>
+              </div>
+                  <!-- people 3 -->
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="img/comment/noo-phuoc-thinh.jpg" alt="">
+              <div class="user-info">
+                <h3>Noo Phước Thịnh</h3>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+              </div>
+          </div>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Amet illo sequi asperiores error pariatur sit eligendi debitis,
+            laborum iure aut nesciunt ducimus rem. Id unde molestiae 
+            facilis, eaque expedita fugiat?</p>
+          </div>
+              <!-- people 4 -->
+              <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                  <img src="img/comment/dan-truong.jpg" alt="">
+                  <div class="user-info">
+                    <h3>Đan Trường</h3>
+                      <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                  </div>
+              </div>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Amet illo sequi asperiores error pariatur sit eligendi debitis,
+                laborum iure aut nesciunt ducimus rem. Id unde molestiae 
+                facilis, eaque expedita fugiat?</p>
+              </div>
+      </div>
+    </div>
+    </section>
+    <!-- oder section -->
+    <section class="oder" id="oder">
+      <h3 class="sub-heading">Đặt hàng ngay</h3>
+      <h1 class="heading">Vận chuyển miễn phí, giao hàng nhanh</h1>
+      <form action="">
+        <div class="inputBox">
+          <div class="input">
+            <span>Họ và tên</span>
+            <input type="text" placeholder="VD: Nguyễn văn A" name="" id="">
+          </div>
+          <div class="input">
+            <span>Số điện thoại</span>
+            <input type="number" placeholder="VD: 0123456789" name="" id="">
+          </div>
+</div>
+          <div class="inputBox">
+            <div class="input">
+              <span>Tên Món</span>
+              <input type="text" placeholder="VD: Cơm gà" name="" id="">
+            </div>
+            <div class="input">
+              <span>Đồ ăn, đồ uống gọi thêm</span>
+              <input type="text" placeholder="VD: CoCa, khoai tây chiên" name="" id="">
+            </div>
+          </div>
+
+          <div class="inputBox">
+            <div class="input">
+              <span>Số lượng</span>
+              <input type="number" placeholder="VD: 5" name="" id="">
+            </div>
+            <div class="input">
+              <span>Ngày và thời gian đặt hàng</span>
+              <input type="datetime-local" >
+            </div>
+          </div>
+          <div class="inputBox">
+            <div class="input">
+              <span>Địa chỉ</span>
+              <textarea name="" placeholder="Nhập địa chỉ cụ thể" id="" cols="30" rows="10">
+              </textarea>
+            </div>
+            <div class="input">
+              <span>Tin nhắn của bạn</span>
+              <textarea name="" id="" placeholder="Tin nhắn bạn muốn gửi" cols="30" rows="10">
+              </textarea>
+            </div>
+          </div>
+          <input type="submit" value="Đặt ngay" name="" class="btn" id="">
+        </form>
+<!-- footer section -->
+<section class="footer">
+  <div class="box-container">
+    <div class="box">
+      <h3>Địa chỉ</h3>
+      <a href="#">Hà đông</a>
+      <a href="#">Long Biên</a>
+      <a href="#">Hoàng Mai</a>
+      <a href="#">Cầu giấy</a>
+      <a href="#">Đống Đa</a>
+    </div>
+    <div class="box">
+      <h3>Đường dẫn</h3>
+      <a href="#home">Trang chủ</a>
+      <a href="#dishes">Bán chạy</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#review">Đánh giá</a>
+      <a href="#order">Đặt hàng</a>
+    </div>
+    <div class="box">
+      <h3>Liên hệ</h3>
+      <a href="#">0123.456.789</a>
+      <a href="#">0987.654.321</a>
+      <a href="#">nqt010223@gmail.com</a>
+      <a href="#">nqt1223@gmail.com</a>
+    </div>
+    <div class="box">
+      <h3>Mạng xã hội</h3>
+      <a href="#">Facebook</a>
+      <a href="#">Zalo</a>
+      <a href="#">instagram</a>
+    </div>
+    </div>
+</section>
+<!-- loader -->
+<div class="loader-container">
+<img src="img/loader/loader2.gif" alt=""></div>
+    <!-- link js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/chillPage.js"></script>
+  </body>
+</html>
