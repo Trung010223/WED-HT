@@ -207,9 +207,7 @@ header .icons #menu-bars {
 .home .home-slider .slide .image img {
   width: 100%;
 }
-.home .home-slider .slide:hover .image img {
-  transform: scale(1.2);
-}
+
 .home .home-slider .slide .content span {
   color: var(--green);
   font-size: 2.5rem;
@@ -391,7 +389,9 @@ header .icons #menu-bars {
   color: var(--black);
   font-size: 2.5rem;
 }
-
+.dishes .box-container .box:hover img {
+  transform: scale(1.2);
+}
 .dishes .box-container .box .stars {
   padding: 1rem 0;
 }
